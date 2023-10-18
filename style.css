@@ -1,6 +1,20 @@
 p {
   color: white;
 }
+
+textarea#hcb_form_content.commentbox.hcb-shadow-r {
+  width: 400px;
+}
+div.home-desc {
+  display: none;
+}
+img.hcb-icon.hcb-door-in {
+  display: none;
+}
+b.author-name {
+  color: white;
+}
+
 #shadowBox {
   background-color: rgb(0, 0, 0);
   /* Fallback color */
