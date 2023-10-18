@@ -2,6 +2,10 @@ p {
   color: white;
 }
 
+h3 {
+  color: white;
+}
+
 textarea#hcb_form_content.commentbox.hcb-shadow-r {
   width: 400px;
 }
