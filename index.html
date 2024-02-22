@@ -3,31 +3,119 @@
 <html>
 
 <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
    <title>My first website</title>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
-   <div id="shadowBox">
-      <h1 align="center" class="rainbow">Welcome to my personal website!</h1>
-      <h2 class="rainbow">This website looks ass BUT ITLL BE BETTER AS THE DAYS GO ON</h2>
-      <h2 class="rainbow">oh and also ty for checkin my website out lolz</h2>   
-    
+<body onLoad="MM_preloadImages('Images/ray.jpg')">
+
+   <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
+      <div class="snowflake">
+      ⋆
+      </div>
     </div>
+  
+   <ul class="tabs">
+      <a href="./index.html"><li data-tab-target="#Home" class="active tab">Home</li></a>
+      <a href="./page2.html"><li data-tab-target="#About" class="tab">About</li></a>
+      <a href="./Gallery 4 frens.html"><li data-tab-target="#About" class="tab">Gallery 4 my frens!</li></a>
+      <a href="./comments.html"><li data-tab-target="#About" class="tab">Comments!</li></a>
+   </ul>
+
+   <div class="tab-content">
+      <div id="Home" data-tab-content class="active">
+         <div id="shadowBox">
+            <h1 align="center" class="rainbow">Welcome to my personal website!</h1>
+            <h2 class="rainbow">This website looks ass BUT ITLL BE BETTER AS THE DAYS GO ON</h2>
+            <h2 class="rainbow">oh and also ty for checkin my website out lolz</h2>   
+          
+          </div>
+      </div>
+      <div id="About" data-tab-content>
+         <a href="./page2" target="_blank"><h1>About</h1></a>
+         <p>This is my about page!</p>
+      </div>
+      <div id="Gallery 4 frens" data-tab-content>
+         <a href="./Gallery 4 frens.html" target="_blank"><h1>Gallery 4 frens!</h1></a>
+         <p>this is the cool thing 4 my frens</p>
+
+      </div>
+   </div>
+   
    <div class="container">
       <a href="./page2"><h2>Click here to learn about me!</h2></a>
+      <a href="page2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','Images/ray.jpg',1)"><img src="Images/is it all black.png" alt="Hi" width="100" height="102" id="Image1"></a>
       <p>oh and also this is me :3</p>
-      <img src="Images/is it all black.png" width="100">
-      <script src="https://static.elfsight.com/platform/platform.js"data-use-service-core defer></script>
+      <a img src="Images/is it all black.png" width="100"></a>
+      <p>this is currently my fav song ^^ (i currently only have it as a mp4 file)</p>
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 <div class="elfsight-app-a800023f-964c-4baf-85e7-b42dcb69b32f"></div>
       <button onclick="alertButton()">Click me 4 a surprise :D</button>
-
-      <!-- begin wwww.htmlcommentbox.com -->
+   
+   <!-- begin wwww.htmlcommentbox.com -->
 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
 <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%244Jl3I.J1dpEUk6FYbEAjp."+"&opts=16798&num=10&ts=1697645973519");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
-
+	</div>
 </body>
 
 <script src="function.js"></script>

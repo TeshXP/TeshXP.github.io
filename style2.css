@@ -1,3 +1,60 @@
+[data-tab-content] {
+    display: none;
+}
+  
+.active[data-tab-content] {
+    display: block;
+}
+li.tab {
+    font-family:'Impact';
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid white;
+}
+  
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+  
+.tab.active {
+    background-color: #CCC;
+}
+  
+.tab:hover {
+    background-color: rgb(136, 134, 191);
+}
+  
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+ul {
+    color: rgb(255, 255, 255);
+}
+  
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 0px solid;
+}
+  
+#Home {
+    color: blue;
+}
+  
+#About {
+    color: pink;
+}
+
 h1, h2, h3{
     color: white;
 }

@@ -2,11 +2,40 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style2.css">
-    <meta charset="UTF-8">
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>About me!</title>
 </head>
 <body>
+<ul class="tabs">
+  <a href="./index.html"><li data-tab-target="#About" class="tab">Home</li></a>
+        <a href="./page2.html"><li data-tab-target="#Home" class="active tab">About</li></a>
+        <a href="./Gallery 4 frens.html"><li data-tab-target="#About" class="tab">Gallery 4 my frens!</li></a>
+        <a href="./comments.html"><li data-tab-target="#About" class="tab">Comments!</li></a>
+</ul>
+  
+     <div class="tab-content">
+        <div id="Home" data-tab-content class="active">
+           <div id="shadowBox">
+              <h1 align="center" class="rainbow">Welcome to my personal website!</h1>
+              <h2 class="rainbow">This website looks ass BUT ITLL BE BETTER AS THE DAYS GO ON</h2>
+              <h2 class="rainbow">oh and also ty for checkin my website out lolz</h2>   
+            
+          </div>
+        </div>
+        <div id="About" data-tab-content>
+           <a href="./page2" target="_blank"><h1>About</h1></a>
+           <p>This is my about page!</p>
+        </div>
+        <div id="Gallery 4 frens" data-tab-content>
+           <a href="./Gallery 4 frens.html" target="_blank"><h1>Gallery 4 frens!</h1></a>
+           <p>this is the cool thing 4 my frens</p>
+  
+        </div>
+     </div>
+
     <div class="container">
         <h1>ABOUT MEEE!!</h1>
         <a href="./"><h2>im just a boy trying to make a website lolz, dont mind it ^^</h2></a>
@@ -14,5 +43,9 @@
         THE HTML YET</h2>
         <h3>So basically I am going to put my projects and achievements on here!! Im also gonna put what i enjoy on here too lolz x)</h3>
         <video controls src="Video/SPARKLES_AND_CHAMPANGE--------_0Video0.mp4" width="200"></video>
+	</div>
 </body>
+
+<script src="tabs.js"></script>
+
 </html>
